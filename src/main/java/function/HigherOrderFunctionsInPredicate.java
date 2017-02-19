@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 import model.Employee;
 import model.EmployeeFactory;
 
-public class HigherOrderFunctions {
+public class HigherOrderFunctionsInPredicate {
     public static void main(String[] args) {
         Predicate<Employee> isRich = e -> e.getSalary() > 1000;
         Predicate<Employee> isEarly = e -> e.getEmployeeId() < 9;
@@ -18,6 +18,9 @@ public class HigherOrderFunctions {
         System.out.println(orMatches.size());
         List<Employee> negateMatches = allMatches(employees, isRich.negate());
         System.out.println(negateMatches.size());
+        Employee polly = employees.get(1);
+        List<Employee> equalsMatches = allMatches(employees, Predicate.isEqual(polly));
+        System.out.println(equalsMatches.size());
     }
 
     public static <T> List allMatches(List<T> list, Predicate<T> predicate) {

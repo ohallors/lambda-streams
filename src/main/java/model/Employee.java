@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Random;
+import java.util.StringJoiner;
 
 /**
  * Created by sheamusohalloran on 05/02/2017.
@@ -56,6 +57,12 @@ public class Employee {
 
     @Override
     public String toString() {
-        return super.toString();
+        return new StringJoiner(", ", "[", "]")
+                .add("firstName=" + firstName)
+                .add("lastName=" + lastName)
+                .add("salary=" + salary)
+                .add("empId=" + employeeId)
+                .toString();
     }
+
 }
