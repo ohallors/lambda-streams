@@ -13,6 +13,8 @@ public class HigherOrderFunctionsConsumer {
     public static void main(String[] args) {
         List<Employee> employees = EmployeeFactory.getEmployees();
         Consumer<Employee> giveRaise = e -> e.setSalary(e.getSalary() * 11 /10);
+        System.out.println("Employees before raise");
+        processEntries(employees, System.out::println);
         System.out.println("Employees after raise");
         processEntries(employees, giveRaise.andThen(System.out::println));
     }
