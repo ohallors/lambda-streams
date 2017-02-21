@@ -7,6 +7,8 @@ import java.util.StringJoiner;
  * Created by sheamusohalloran on 05/02/2017.
  */
 public class Employee {
+
+    public static final Employee DEFAULT_EMPLOYEE = new Employee("No Name", "No last name", 0);
     int salary;
     int employeeId;
     String firstName;

@@ -9,6 +9,14 @@ import java.util.stream.Stream;
 
 /**
  * ? means unknown
+ * PECS - Producer Extends, Consumer Super!!
+ * - Use extends when you consume
+ * - Use super when you provide
+ * - Use explicit type when you do both
+ *
+ * In Java 8 streams
+ * providing a value from the stream -> super
+ * using the value from the supplied lambda -> extends
  */
 public class Wildcards {
     public static void main(String[] args) {
