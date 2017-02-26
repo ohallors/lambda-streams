@@ -8,6 +8,7 @@ import model.EmployeeFactory;
 /**
  * Created by sheamusohalloran on 20/02/2017.
  * Signature from Stream
+ * PECS again, Consumes with Super, Produces with extends
  * <R> Stream<R> map(Function<? super T, ? extends R> mapper)
  */
 public class StreamMap {

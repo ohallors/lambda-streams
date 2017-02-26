@@ -22,8 +22,17 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
-        employeeId = new Random().nextInt(10 - 1 + 1) + 1;
+        employeeId = new Random().nextInt(100 - 1 + 1) + 1;
     }
+
+    public Employee(String firstName, String lastName, int salary, int employeeId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+        this.employeeId = employeeId;
+    }
+
+
 
     public int getEmployeeId() {
         return employeeId;
