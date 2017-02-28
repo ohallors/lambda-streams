@@ -10,7 +10,7 @@ import model.EmployeeUtils;
 /**
  * Created by sheamusohalloran on 22/02/2017.
  */
-public class Map {
+public class MapStreams {
     public static void main(String[] args) {
         Double[] nums =  {1.0, 2.0, 3.0, 4.0, 5.0};
         Double[] squares = Stream.of(nums).toArray(Double[]::new);

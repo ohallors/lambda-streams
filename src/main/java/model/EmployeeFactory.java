@@ -11,16 +11,16 @@ import java.util.function.Supplier;
 public class EmployeeFactory {
 
     private static List<Employee> GOOGLERS = Arrays.asList(
-            new Employee("Larry", "Page", 999999, 1),
-            new Employee("Sergey", "Brin", 888888, 2),
-            new Employee("Eric", "Schmidt", 777777, 4),
-            new Employee("Nikesh", "Arora", 666666, 5),
-            new Employee("Patrick", "Pichet", 555555, 6),
-            new Employee("David", "Drummond", 444444, 7),
-            new Employee("Susan", "Wojcicki", 333333, 8),
-            new Employee("Peter", "Norvig", 222222, 9),
-            new Employee("Jeffrey", "Dean", 111111, 10),
-            new Employee("Sanjay", "Ghemawat", 900000, 11)
+            new Employee("Larry", "Page", 999999, 1, "Mountain View"),
+            new Employee("Sergey", "Brin", 888888, 2, "Mountain View"),
+            new Employee("Eric", "Schmidt", 777777, 4, "Mountain View"),
+            new Employee("Nikesh", "Arora", 666666, 5, "Mountain View"),
+            new Employee("Patrick", "Pichet", 555555, 6, "New York"),
+            new Employee("David", "Drummond", 444444, 7, "New York"),
+            new Employee("Susan", "Wojcicki", 333333, 8, "New York"),
+            new Employee("Peter", "Norvig", 222222, 9, "New York"),
+            new Employee("Jeffrey", "Dean", 111111, 10, "Zurich"),
+            new Employee("Sanjay", "Ghemawat", 900000, 11, "Zurich")
     );
 
     private static Supplier[] peopleGenerators = {

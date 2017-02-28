@@ -13,6 +13,7 @@ public class Employee {
     int employeeId;
     String firstName;
     String lastName;
+    String office;
 
     public Employee() {
 
@@ -32,7 +33,13 @@ public class Employee {
         this.employeeId = employeeId;
     }
 
-
+    public Employee(String firstName, String lastName, int salary, int employeeId, String office) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+        this.employeeId = employeeId;
+        this.office = office;
+    }
 
     public int getEmployeeId() {
         return employeeId;
@@ -64,6 +71,14 @@ public class Employee {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getOffice() {
+        return office;
+    }
+
+    public void setOffice(String office) {
+        this.office = office;
     }
 
     @Override
